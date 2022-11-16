@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+        <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+    </head>
+    <body>
+        <div align = "center">
+            <br><h2><b>Subject Details</b></h2><br>
+            
+            <tr>
+                <div class="col-sm-5" align = "center">
+                    <div class="panel-body" align = "center" >
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Subject ID</th>
+                                    <th>Subject Name</th>
+                                    <th>Credit</th>
+                                    <th>Lecture Name</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr  th:each="subject : ${listsubject }">
+                                    <td th:text="${subject.subid}">Subject ID</td>
+                                    <td th:text="${subject.subname}">Subject Name</td>
+                                    <td th:text="${subject.credit}">Credit</td>
+                                    <td th:text="${subject.lecname}">Lecture Name</td>
+                                         
+                                    <td>
+                                        <a th:href="@{'/deleteSubject/' + ${subject.subid}}">Delete</a>
+                                        
+                                   
+                                    </td>     
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </tr>
+
+            </tbody>
+            </table>
+            <div>
+                </body>
+                </html>

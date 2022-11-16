@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+              crossorigin="anonymous">
+            <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+    </head>
+    
+    <body>
+        <div class="container-fluid">
+           
+
+                <div class="jumbotron text-center" style="background-color:darkgray;">
+                    <h1 class="display-4"><b>WELCOME!</b></h1><br>
+                    <h4><b>School Management System</b></h4>
+                </div>
+            
+            <br><br><br>
+
+                <div class="row">
+                    
+                          <div class="col-sm-1 pt-1" >
+                        
+                    </div>              
+                    
+                    <div class="col-sm-2 pt-2">
+                        <div class="card" style="background-color:darkgray;">
+                            <div class="card-body">
+                                <h4 class="card-title">View Student Details</h4><br>
+                                <a th:href="@{/}" class="card-link btn btn-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-sm-2 pt-2" >
+                        
+                    </div>
+                    
+                    
+                    
+                    <div class="col-sm-2 pt-2" >
+                        <div class="card" style="background-color:darkgray;">
+                            <div class="card-body">
+                                <h4 class="card-title">View Lecture Details</h4><br>
+                                <a th:href="@{/lecture}" class="card-link btn btn-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                       <div class="col-sm-2 pt-2" >
+                        
+                    </div>                
+                    
+                    
+                    <div class="col-sm-2 pt-2" >
+                        <div class="card" style="background-color:darkgray;">
+                            <div class="card-body">
+                                <h4 class="card-title">View Subject Details</h4><br>
+                                <a th:href="@{/indexsub}" class="card-link btn btn-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="col-sm-1 pt-1" >
+                        
+                    </div> 
+                                      
+
+                </div>
+        </div>     
+    </body>
+</html>
